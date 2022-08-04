@@ -1,12 +1,14 @@
 <template>
   <div>
-
     <el-container>
-      <el-header height="106px">
-        <Headers style="height:106px"></Headers>
+      <el-header>
+        <Headers :showNav.sync="showNav"></Headers>
       </el-header>
+      <headerNav v-if="showNav.show"></headerNav>
       <el-main>
-        <Juejinmain />
+        <router-view>
+          <Juejinmain />
+        </router-view>
       </el-main>
     </el-container>
     <div class="backTop">
@@ -21,11 +23,19 @@
 </template>
 
 <script>
-import Headers from "@/components/Hearder/headers.vue";
-import Juejinmain from "@/pages/juejinMain/jujinmain.vue";
+import Headers from "@/components/Hearder/index.vue";
+import Juejinmain from "@/pages/juejinMain/index.vue";
+import headerNav from "@/components/Hearder/headerNav/index.vue";
 export default {
   name: "App",
-  components: { Headers, Juejinmain },
+  components: { Headers, headerNav, Juejinmain },
+  data() {
+    return {
+      showNav: {
+        show: true, //
+      },
+    };
+  },
 };
 </script>
 <style scoped>

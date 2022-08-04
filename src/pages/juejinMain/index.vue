@@ -9,7 +9,7 @@
     </el-row>
     <el-row type="flex" class="row-bg" justify="center" :gutter="20">
       <el-col :span="4" :offset="0">
-        <div class="grid-content bg-purple">我们</div>
+        <div class="grid-content bg-purple"></div>
       </el-col>
 
       <el-col :span="12">
@@ -30,27 +30,18 @@
 </template>
 
 <script>
-import About from "@/components/About.vue";
-import mainHeader from "@/pages/juejinMain/juejinMainHeader/juejinHeader.vue";
-import mainCard from "@/pages/juejinMain/mainCard/mainCard.vue";
-import mainTable from "@/pages/juejinMain/mainTable/mainTable.vue";
+import About from "@/pages/juejinMain/About/index.vue";
+import mainHeader from "@/pages/juejinMain/juejinMainHeader/index.vue";
+import mainCard from "@/pages/juejinMain/mainCard/index.vue";
+import mainTable from "@/pages/juejinMain/mainTable/index.vue";
+import { mapState } from "vuex";
 export default {
   name: "Juejinmain",
   components: { About, mainHeader, mainCard, mainTable },
-  data() {
-    return {
-      tag: [],
-    };
-  },
-  methods: {
-    // 获取tags
-    getTags(tags) {
-      //   console.log(tags);
-      this.tag = tags;
-    },
-  },
-  mounted() {
-    this.$bus.$on("pubsubTags", this.getTags);
+  computed: {
+    ...mapState({
+      tag: (state) => state.home.tags,
+    }),
   },
 };
 </script>

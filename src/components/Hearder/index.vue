@@ -45,24 +45,14 @@
           </div>
         </el-col>
       </el-row>
-      <el-row style="height:46px" type="flex" class="row-bg" justify="center">
-        <el-col :span="16" style="height:46px">
-          <div class="grid-content bg-purple" style="height:100%;width:100%;display:flex;justify-content:space-between;align-items: center">
-            <tagList />
-            <span>标签管理</span>
-          </div>
-        </el-col>
-      </el-row>
-
     </div>
   </div>
 </template>
 
 <script>
-import tagList from "@/components/Hearder/tagList/tagLIst.vue";
 export default {
   name: "Headers",
-  components: { tagList },
+  props: ["showNav"],
   data() {
     return {
       activeIndex: "1",
@@ -101,12 +91,23 @@ export default {
   methods: {
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
+      if (key == 1) {
+        this.showNav.show = true;
+        this.$emit("update:showNav", this.showNav);
+        this.$router.push({ name: "Home" }); //跳转到首页页面
+      }
+      if (key == 2) {
+        this.showNav.show = false;
+        this.$emit("update:showNav", this.showNav);
+        this.$router.push({ name: "Boiling" }); //跳转到沸点页面
+      }
     },
   },
   mounted() {
-    this.$nextTick(function () {
-      this.$bus.$emit("pubsubTags", this.tagInfo); //发送数据给掘金main
-    });
+    // this.$nextTick(function () {
+    //   this.$bus.$emit("pubsubTags", this.tagInfo); //发送数据给掘金main
+    // });
+    this.$store.dispatch("home/getTags", this.tagInfo);
   },
 };
 </script>
