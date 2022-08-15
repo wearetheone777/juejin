@@ -10,14 +10,14 @@
         <el-col :span="10">
           <div class="grid-content bg-purple-dark">
             <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" active-text-color="#409EFF">
-              <el-menu-item index="1"><a href="#">首页</a></el-menu-item>
-              <el-menu-item index="2"><a href="#">沸点</a></el-menu-item>
-              <el-menu-item index="3"><a href="#">课程</a></el-menu-item>
-              <el-menu-item index="4"><a href="#">直播</a></el-menu-item>
-              <el-menu-item index="5"><a href="#">活动</a></el-menu-item>
-              <el-menu-item index="6"><a href="#">商城</a></el-menu-item>
-              <el-menu-item index="7"><a href="#">APP</a></el-menu-item>
-              <el-menu-item index="8"><a href="#">插件</a></el-menu-item>
+              <el-menu-item index="1"><a href="JavaScript:void(0)">首页</a></el-menu-item>
+              <el-menu-item index="2"><a href="JavaScript:void(0)">沸点</a></el-menu-item>
+              <el-menu-item index="3"><a href="JavaScript:void(0)">课程</a></el-menu-item>
+              <el-menu-item index="4"><a href="JavaScript:void(0)">直播</a></el-menu-item>
+              <el-menu-item index="5"><a href="JavaScript:void(0)">活动</a></el-menu-item>
+              <el-menu-item index="6"><a href="JavaScript:void(0)">商城</a></el-menu-item>
+              <el-menu-item index="7"><a href="JavaScript:void(0)">APP</a></el-menu-item>
+              <el-menu-item index="8"><a href="JavaScript:void(0)">插件</a></el-menu-item>
             </el-menu>
           </div>
         </el-col>

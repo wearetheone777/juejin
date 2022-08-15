@@ -18,12 +18,12 @@
     </el-card>
     <el-card class="box-card cardSecond">
       <div class="text item">
-        <a href="#"><img style="width: 100%;height: 100%;" src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d76f050f2f6d48f8890e4036ac4fdfb2~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" alt="出错了"></a>
+        <a href="JavaScript:void(0)"><img style="width: 100%;height: 100%;" src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d76f050f2f6d48f8890e4036ac4fdfb2~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" alt="出错了"></a>
       </div>
     </el-card>
     <el-card class="box-card cardSecond cardThree">
       <div class="text item">
-        <a href="#"><img style="width: 100%;height: 100%;" src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/367585655bb74cdf934df73428b27589~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" alt="出错了"></a>
+        <a href="JavaScript:void(0)"><img style="width: 100%;height: 100%;" src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/367585655bb74cdf934df73428b27589~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" alt="出错了"></a>
       </div>
     </el-card>
     <el-card class="box-card cardFour">
@@ -57,13 +57,13 @@
       <div class="text item">
         <ul>
           <li>
-            <a href="#">
+            <a href="JavaScript:void(0)">
               <img width="36px" height="36px" src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-tutu.d58819c.png" alt="">
               <span>稀土掘金漫游指南</span>
             </a>
           </li>
-          <li><a href="#"><img width="36px" height="36px" src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-extension-icon.4b79fb4.png" alt=""><span>安装掘金浏览器插件</span></a></li>
-          <li><a href="#"><img width="36px" height="36px" src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-miner.b78347c.png" alt=""><span>前往掘金翻译计划</span></a></li>
+          <li><a href="JavaScript:void(0)"><img width="36px" height="36px" src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-extension-icon.4b79fb4.png" alt=""><span>安装掘金浏览器插件</span></a></li>
+          <li><a href="JavaScript:void(0)"><img width="36px" height="36px" src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-miner.b78347c.png" alt=""><span>前往掘金翻译计划</span></a></li>
         </ul>
       </div>
     </el-card>
