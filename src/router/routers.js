@@ -16,6 +16,7 @@ export default [
     path: "/boiling",
     component: boiling,
     name: "Boiling",
+    redirect: "boiling/news",
     children: [
       {
         path: "news",
