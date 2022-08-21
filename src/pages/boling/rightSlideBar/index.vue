@@ -82,218 +82,237 @@
         </a>
       </p>
     </div>
+    <div class="slideBarFour">
+      <a href="Javascript:void(0)">如何玩转沸点</a>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "RightSlideBar",
-  data() {
-    return {
-      commentList: [
-        {
-          one: "#搞笑程序员#",
-          two: "899",
-        },
-        {
-          one: "#空气炸锅美食推荐#",
-          two: "635",
-        },
-        {
-          one: "#高情商小技巧#",
-          two: "635",
-        },
-        {
-          one: "#医疗人生#",
-          two: "58K",
-        },
-        {
-          one: "#高效阅读技巧#",
-          two: "635",
-        },
-        {
-          one: "#倔友加油站#",
-          two: "635",
-        },
-        {
-          one: "#休闲小游戏推荐#",
-          two: "635",
-        },
-        {
-          one: "#运动装备推荐#",
-          two: "635",
-        },
-        {
-          one: "#怎么看待996#",
-          two: "635",
-        },
-      ],
-    };
-  },
+    name: 'RightSlideBar',
+    data() {
+        return {
+            commentList: [
+                {
+                    one: '#搞笑程序员#',
+                    two: '899',
+                },
+                {
+                    one: '#空气炸锅美食推荐#',
+                    two: '635',
+                },
+                {
+                    one: '#高情商小技巧#',
+                    two: '635',
+                },
+                {
+                    one: '#医疗人生#',
+                    two: '58K',
+                },
+                {
+                    one: '#高效阅读技巧#',
+                    two: '635',
+                },
+                {
+                    one: '#倔友加油站#',
+                    two: '635',
+                },
+                {
+                    one: '#休闲小游戏推荐#',
+                    two: '635',
+                },
+                {
+                    one: '#运动装备推荐#',
+                    two: '635',
+                },
+                {
+                    one: '#怎么看待996#',
+                    two: '635',
+                },
+            ],
+        };
+    },
 };
 </script>
 
 <style scoped>
 .slideBar div {
-  background-color: #fff;
-  margin-bottom: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
 }
 .slideBarFirst {
-  height: 200px;
-  padding: 24px 20px;
-  box-sizing: border-box;
-  width: 100%;
+    height: 200px;
+    padding: 24px 20px;
+    box-sizing: border-box;
+    width: 100%;
 }
 .slideBarFirst .slideBarFirstTop {
-  height: 52px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
+    height: 52px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
 }
 .slideBarFirst .slideBarFirstTop img {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 .slideBarFirst .slideBarFirstTop span {
-  margin-left: 10px;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #252933;
-  word-break: break-all;
-  max-width: 140px;
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252933;
+    word-break: break-all;
+    max-width: 140px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 .slideBarFirstBottom {
-  height: 50px;
-  display: flex;
-  width: 100%;
-  box-sizing: border-box;
-  line-height: 50px;
+    height: 50px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 50px;
 }
 .slideBarFirstBottom a {
-  text-decoration: none;
-  text-align: left;
-  padding-right: 15px;
+    text-decoration: none;
+    text-align: left;
+    padding-right: 15px;
 }
 .slideBarFirstBottom div {
-  height: 25px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 25px;
-  color: #252933;
-  white-space: nowrap;
+    height: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #252933;
+    white-space: nowrap;
 }
 /* 第二个区域 */
 .hot_list {
-  height: 337px;
-  width: 100%;
-  box-sizing: border-box;
+    height: 337px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .hot_list > p {
-  text-align: left;
-  height: 56px;
-  line-height: 56px;
-  padding: 0 20px;
-  font-weight: 500;
-  font-size: 16px;
-  color: #1d2129;
-  border-bottom: 1px solid #e4e6eb;
-  margin: 0;
+    text-align: left;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1d2129;
+    border-bottom: 1px solid #e4e6eb;
+    margin: 0;
 }
 .hot_list .hot_item {
-  display: flex;
-  text-decoration: none;
-  height: 83px;
-  width: 100%;
-  margin-top: 10px;
+    display: flex;
+    text-decoration: none;
+    height: 83px;
+    width: 100%;
+    margin-top: 10px;
 }
 .hot_list a:hover,
 .hot_content:hover {
-  background-color: #f7f8fa;
+    background-color: #f7f8fa;
 }
 .hot_content > p:hover {
-  color: blue;
+    color: blue;
 }
 .hot_list .hot_item .hot_content {
-  transition: color 0.3s;
-  font-size: 14px;
-  line-height: 24px;
-  color: #515767;
-  margin: 0;
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  box-sizing: border-box;
+    transition: color 0.3s;
+    font-size: 14px;
+    line-height: 24px;
+    color: #515767;
+    margin: 0;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    box-sizing: border-box;
 }
 .hot_list .hot_item .cont {
-  padding-top: 4px;
-  font-size: 12px;
-  line-height: 20px;
-  color: #8a919f;
-  margin: 0;
+    padding-top: 4px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #8a919f;
+    margin: 0;
 }
 .hot_list .hot_item img {
-  margin-left: 16px;
-  width: 64px;
-  height: 64px;
-  border-radius: 4px;
+    margin-left: 16px;
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
 }
 /* 第四个区域 */
 .slideBarThree .slideBarThreeComment {
-  height: 56px;
-  line-height: 56px;
-  text-align: left;
-  padding: 0 20px;
-  font-weight: 500;
-  font-size: 16px;
-  color: #1d2129;
-  border-bottom: 1px solid #e4e6eb;
-  margin: 0;
+    height: 56px;
+    line-height: 56px;
+    text-align: left;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1d2129;
+    border-bottom: 1px solid #e4e6eb;
+    margin: 0;
 }
 .slideBarThree .slideBarThreeComment > span {
-  font-size: 14px;
-  color: #8a919f;
-  cursor: pointer;
+    font-size: 14px;
+    color: #8a919f;
+    cursor: pointer;
 }
 .slideBarList {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 22px;
-  padding: 10px 10px;
-  text-decoration: none;
-  line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 22px;
+    padding: 10px 10px;
+    text-decoration: none;
+    line-height: 22px;
 }
 .slideBarList:hover {
-  text-decoration: none; /*指鼠标在链接*/
+    text-decoration: none; /*指鼠标在链接*/
 }
 .slideBarThree .slideBarList .slideBarImg {
-  width: 16px;
-  height: 16px;
-  margin-bottom: 2px;
-  vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 2px;
+    vertical-align: middle;
 }
 .slideBarThreeMain > span {
-  font-size: 14px;
-  color: #515767;
-  word-break: break-all;
+    font-size: 14px;
+    color: #515767;
+    word-break: break-all;
 }
 .slideBarThreeBottom {
-  height: 46px;
-  line-height: 46px;
-  border-top: 1px solid #e4e6eb;
-  font-size: 14px;
-  cursor: pointer;
-  color: #8a919f;
+    height: 46px;
+    line-height: 46px;
+    border-top: 1px solid #e4e6eb;
+    font-size: 14px;
+    cursor: pointer;
+    color: #8a919f;
 }
 .slideBarThreeBottom > a {
-  text-decoration: none;
+    text-decoration: none;
+}
+.slideBarFour > a {
+    display: block;
+    line-height: 72px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 108px;
+    color: #515767;
+    margin-top: 20px;
+    background-image: url(//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/guide.1535752.png);
+    background-color: #fff;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: 33px -1px;
+    text-decoration: none;
 }
 </style>

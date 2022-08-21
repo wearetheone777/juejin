@@ -23,73 +23,107 @@
 </template>
 
 <script>
-import Headers from "@/components/Hearder/index.vue";
-import Juejinmain from "@/pages/juejinMain/index.vue";
-import headerNav from "@/components/Hearder/headerNav/index.vue";
+import Headers from '@/components/Hearder/index.vue';
+import Juejinmain from '@/pages/juejinMain/index.vue';
+import headerNav from '@/components/Hearder/headerNav/index.vue';
 export default {
-  name: "App",
-  components: { Headers, headerNav, Juejinmain },
-  data() {
-    return {
-      showNav: {
-        show: true, //
-      },
-    };
-  },
+    name: 'App',
+    components: { Headers, headerNav, Juejinmain },
+    data() {
+        return {
+            showNav: {
+                show: true, //
+            },
+        };
+    },
 };
 </script>
 <style scoped>
 .backTop {
-  height: 1px;
-  overflow-x: hidden;
+    height: 1px;
+    overflow-x: hidden;
 }
 </style>
 <style>
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 .el-header,
 .el-footer {
-  background-color: #b3c0d1;
-  color: #333;
-  text-align: center;
-  line-height: 60px;
+    background-color: #b3c0d1;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
 }
 
 .el-aside {
-  background-color: #d3dce6;
-  color: #333;
-  text-align: center;
-  line-height: 200px;
+    background-color: #d3dce6;
+    color: #333;
+    text-align: center;
+    line-height: 200px;
 }
 
 .el-main {
-  background-color: #e9eef3;
-  color: #333;
-  text-align: center;
-  /* line-height: 160px; */
+    background-color: #e9eef3;
+    color: #333;
+    text-align: center;
+    /* line-height: 160px; */
 }
 
 body > .el-container {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .el-container:nth-child(5) .el-aside,
 .el-container:nth-child(6) .el-aside {
-  line-height: 260px;
+    line-height: 260px;
 }
 
 .el-container:nth-child(7) .el-aside {
-  line-height: 320px;
+    line-height: 320px;
 }
 </style>
 <style type="text/css">
 .icon {
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+</style>
+<style lang="less">
+.el-row {
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.el-col {
+    border-radius: 4px;
+}
+.bg-purple-dark {
+    background: #99a9bf;
+}
+.bg-purple {
+    background: #d3dce6;
+}
+.bg-purple-light {
+    background: #e5e9f2;
+}
+.grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+}
+.row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
 }
 </style>
